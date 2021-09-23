@@ -1,0 +1,30 @@
+﻿@page
+@model WebApp.Pages.CreateTodoModel
+@{
+}
+
+<h1>Create a new ToDo</h1>
+
+<form method="post">
+    @*<p>Title</p>
+    <input type="text" name="Title">
+    <br />
+    <p>Description</p>
+    <input type="text" name="Description">
+    <br />
+    <input type="submit" value="Submit" asp-page-handler="Submit" />*@
+    <table>
+        <tr>
+            <td>Enter Title: </td>
+            <td><input type="text" name="Title"/></td>
+        </tr>
+        <tr>
+            <td>Enter Description: </td>
+            <td><input type="text" name="Description"/></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Submit" asp-page-handler="Submit"/></td>
+        </tr>
+    </table>
+</form>
