@@ -14,8 +14,6 @@ namespace WebApp.Pages
         public string Title { get; set; }
         [BindProperty]
         public string Description { get; set; }
-        [BindProperty]
-        public string IsFinished { get; set; }
         public void OnPost()
         {
             var todo = new ToDoModel {Title = Title, Description = Description};
