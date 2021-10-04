@@ -8,13 +8,9 @@ namespace WebApp
 {
     public class ToDoModel
     {
-        [BindProperty(SupportsGet = true)]
         public string Title { get; set; }
-        [BindProperty(SupportsGet = true)]
         public string Description { get; set; }
-        [BindProperty(SupportsGet = true)]
         public bool IsCompleted { get; set; }
-        [BindProperty(SupportsGet = true)]
         public DateTime Created { get; set; }
     }
 }

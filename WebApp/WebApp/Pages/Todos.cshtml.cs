@@ -13,8 +13,8 @@ namespace WebApp.Pages
         public List<ToDoModel> TodoModels;
         public async Task<IActionResult> OnGet()
         {
-            var client = new  RestClient("https://cosmos-api-jonas.azurewebsites.net/api");
-            var request = new RestRequest($"/ToDoGet?code=kkl/NRceMo06NRZhg8lD3Ng77tyEzBwar3jFnOGlcaZFoJxXm10EWg==", DataFormat.Json);
+            var client = new  RestClient("https://cosmos-api-rest.azurewebsites.net/api");
+            var request = new RestRequest($"/ToDoGet?code=OS8k7CUuC3yXBm910AeXYaZvGg5SVDmCzVW3gGgiN0Ks3sYK6nN77A==", DataFormat.Json);
 
             var response = await client.ExecuteAsync<List<ToDoModel>>(request);
             TodoModels = response.Data;
